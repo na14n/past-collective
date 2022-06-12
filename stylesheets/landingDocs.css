@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.mainPage{
+    box-sizing: border-box;
+}
+
+.landingDocs{
+    position: relative;
+    background-color: #fff;
+    min-height: 100v;
+    width: 100%;
+}
+
+.lDocsContent{
+    position: absolute;
+    top: 50px;
+    left: 10vw;
+    z-index: 3;
+}
+
+.lPptText{
+    position: relative;
+    width: 400px;
+}
+
+.lPptText h1{
+    color: #fff;
+    margin: 10px;
+    font-size: 4rem;
+    font-weight: 900;
+    
+}
+
+.lPptText p{
+    margin: 0px 20px;
+    color: #eaf1ff;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 900;
+}
+
+.bgImg{
+    position: absolute;
+    bottom: 1rem;
+    right: -1rem;
+    opacity: 0.4;
+}
+
+.bgImg img{
+    transform: scale(1.25);
+}
+
+.cardContainer{
+    position: absolute;
+    width: 100%;
+    top: 38vh;
+    z-index: 30;
+    opacity: 1;
+    visibility: visible;
+    transition: ease-out .25s;
+}
+
+.cardContainer.is-active{
+    opacity: 0;
+    visibility: hidden;
+    bottom: -20vh;
+}
+
+.cardContainer .row{
+    margin: 10px 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card{
+    position: relative;
+    height: 10rem;
+    width: 16rem;
+    border-radius: 25px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 0 8px #11111166;
+    transition: .5s;
+}
+
+.cardImg{
+    height: 175px;
+    width: 17rem;
+    border-radius: 25px;
+    opacity: 1;
+    transition: .75s;
+    transform: scale(1);
+}
+
+.intro{
+    position: absolute;
+    height: 8rem;
+    min-width: 16rem;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    bottom: -8rem;
+    transition: .75s;
+    flex: 1;
+}
+
+.intro h1{
+    margin: 5px 0px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 1;
+    text-transform: uppercase;
+}
+
+.intro p{
+    font-size: 0.8rem;
+    color: #eaf1ff;
+    font-weight: 900;
+    letter-spacing: 1;
+    opacity: 0.92;
+}
+
+.card:hover{
+    box-shadow: 0 0 24px #11111166;
+}
+
+.card:hover .intro{
+    bottom: 0rem;
+}
+
+.card:hover .cardImg{
+    transform: scale(1.25) rotate(-3deg);
+}
+
+
+@media screen and (max-width:1200px){
+    .card{
+        width: 20rem;
+    }
+}
+
+.cardsBg{
+    position: absolute;
+    background-color: #225fd1;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    overflow: hidden;
+}
+
+.docsScrolling{
+    position: absolute;
+    right: 100vw;
+    bottom: 20vh;
+    transform: rotate(-5deg);
+    opacity: 0.25;
+}
+
+.marquee {
+    position: absolute;
+    width: 2560px;
+    height: 20vh;
+    color: #225fd1;
+    overflow: hidden;
+}
+
+.marqueeContent {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 10s linear infinite;
+}
+@keyframes scrolling{
+    0% {transform: translateX(0);}
+    100%{transform: translateX(-1280px);}
+}
+
+.marqueeContent li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    flex-shrink: 0;
+    font-size: 8rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.scrollContainer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}

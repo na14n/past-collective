@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+
+
+.popup-btn{
+    z-index: 22;
+    color: #fff;
+    background-color: #5a48ff;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    border-top-left-radius: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.popup-btn:hover{
+    background-color: #07c507;
+}
+
+
+
+.popup-view{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    height: 100vh;
+    width: 100%;
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.popup-view.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.product .popup-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50vw;
+    height: 60vh;
+    margin: 4rem;
+}
+
+.product .popup-card .product-img{
+    background-color: #111;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: .3s;
+}
+
+.product-img img:nth-child(1){
+    margin: .25rem;
+    transform: translateX(-4rem) translateY(-1rem) rotate(-5deg);
+    width: 18rem;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.product-img img:nth-child(2){
+    margin: .25rem;
+    transform: translateX(-4rem) translateY(1rem) rotate(-5deg);
+    height: 24rem;
+    max-height: 25rem;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.product-img img:nth-child(1):hover{
+    margin: 1rem;
+    transform: translateX(-4rem) translateY(1rem) rotate(-5deg) scale(1.1);
+}
+
+.product-img img:nth-child(2):hover{
+    margin: 1rem;
+    transform: translateX(-4rem) translateY(0rem) rotate(-5deg) scale(1.1);
+}
+
+.product .popup-card .info{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 4rem;
+    border-radius: 10px;
+}
+
+.product .popup-card .close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.close-btn span{
+    height: .21rem;
+    width: 1.5rem;
+    background: #111;
+    position: absolute;
+    transition: .3s;
+}
+
+.close-btn:hover span{
+    background: #ca3030;
+}
+
+
+.close-btn span:nth-child(1){
+    transform: rotate(45deg);
+    transition: .3s;
+}
+
+.close-btn span:nth-child(2){
+    transform: rotate(-45deg);
+    transition: .3s;
+}
+
+.close-btn:hover span:nth-child(1){
+    transform: rotate(45deg) scale(1.1);
+}
+
+.close-btn:hover span:nth-child(2){
+    transform: rotate(-45deg) scale(1.1);
+}
+
+.product .popup-card .info h1{
+    margin: 1rem 0rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.product .popup-card .info p{
+    font-size: 1rem;
+    margin: 1.5rem;
+    font-weight: 400;
+}
+
+.dlBtn{
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    width: fit-content;
+    color: #fff;
+    background-color: #5a48ff;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75rem;
+    border-radius: .75rem;
+    transition: .3s;
+}
+
+.dlBtn:hover{
+    letter-spacing: 2px;
+    background-color: #07c507;
+}
+
+

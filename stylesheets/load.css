@@ -1,0 +1,76 @@
+.lContent{
+    animation: transitionInY 1s;
+}
+.scrollDownBtn{
+    animation: transitionInY 1s;
+}
+
+.scrolling{
+    animation: transitionInYB 1s;
+}
+
+.lPptContent{
+    animation: transitionInY 1s;
+}
+
+.cardContainer{
+    animation: transitionInYC .75s;
+}
+
+.psdScrolling{
+    animation: transitionInYD 1s;
+}
+
+.pptScrolling{
+    animation: transitionInYD 1s;
+}
+
+.docsScrolling{
+    animation: transitionInYD 1s;
+}
+
+@keyframes transitionInY {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+    
+}
+
+
+@keyframes transitionInYB {
+    from{
+        opacity: 0;
+        transform: translateY(-10px) rotate(30deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) rotate(-30);
+    }
+}
+
+@keyframes transitionInYC {
+    from{
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes transitionInYD {
+    from{
+        opacity: 0;
+        transform: translateY(-10px) rotate(30deg);
+    }
+    to{
+        opacity: 0.25;
+        transform: translateY(0) rotate(-30);
+    }
+}

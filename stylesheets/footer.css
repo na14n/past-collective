@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.footerContainer{
+    position: relative;
+    max-height: 22vh;
+    width: 100%;
+    background-color: #202020;
+    overflow: hidden;
+    z-index: 20;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    transition: .25s;
+}
+
+.footerContainer.is-active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fText{
+    position: relative;
+    height: 100%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.fText h1{
+    color: #fff;
+    margin: .25rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+}
+
+.fText p{
+    color: #c5c5c5;
+    font-size: 0.75rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.tMark{
+    position: relative;
+    height: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.hDisclaimer{
+    color: #fff;
+    margin: .25rem 0rem;
+    font-size: 1rem;
+    font-weight: 900;
+    
+}
+
+.pDisclaimer{
+    color: #c5c5c5;
+    margin: 0rem 0rem 0.7rem;
+    font-size: 0.75rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.rReserved{
+    color: #c5c5c5;
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+}
+
+.authors{
+    position: relative;
+    top: 0rem;
+    height: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.authors h1{
+    color: #fff;
+    margin: .25rem 0rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.authors p{
+    color: #c5c5c5;
+    margin: 0rem 0rem 0.05rem;
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.btmMenu{
+    position: relative;
+    top: 0rem;
+    height: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.btmMenu h1{
+    color: #fff;
+    margin: .25rem 0rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.btmMenu a{
+    text-decoration: none;
+    color: #c5c5c5;
+    margin: 0rem 0rem 0.05rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.aDocs:hover{
+    color: #3e80fa;
+}
+
+.aPpt:hover{
+    color: #d45c2c;
+}
+
+.aPsd:hover{
+    color: #8f62d6;
+}

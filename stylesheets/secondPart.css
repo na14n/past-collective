@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+.secondPart{
+    position: relative;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cardContainer{
+    z-index: 30;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s;
+}
+
+.cardContainer.is-active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cardRow{
+    position: absolute;
+    margin: 10px 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    border-radius: 25px;
+    margin: 3rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px #11111166;
+    transition: .75s;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+}
+
+.card img{
+    max-height: 20rem;
+    width: 17rem;
+    border-radius: 25px;
+    transition: .75s;
+}
+
+.title{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-2rem);
+    z-index: -1;
+    transition: .75s;
+}
+
+.title h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 1.25rem;
+}
+
+.card:nth-child(1) .title h1{
+    color: #13336e;
+}
+
+.card:nth-child(2) .title h1{
+    color: #da4a12;
+}
+
+.card:nth-child(3) .title h1{
+    color: #3b079c;
+}
+
+.card:hover{
+    box-shadow: 0 0 24px #11111166;
+    transform: translateY(-3rem);
+}
+
+.card:hover > .title{
+    transform: translateY(3rem);
+}
+
+.docsHoverContainer{
+    transition: 0.75s;
+    min-height: 10rem;
+    position: absolute;
+    bottom: -3rem;
+    right: 10rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.docsHoverImg{
+    transform: scale(1.25) rotate(-10deg);
+}
+
+.pptHoverContainer{
+    transition: 0.75s;
+    min-height: 10rem;
+    position: absolute;
+    bottom: -10rem;
+    right: 10rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pptHoverImg{
+    transform: rotate(-10deg);
+}
+
+.psdHoverContainer{
+    transition: 0.75s;
+    min-height: 10rem;
+    position: absolute;
+    bottom: -10rem;
+    right: 10rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.psdHoverImg{
+    transform: rotate(-10deg);
+}
+
+.sText{
+    position: relative;
+    top: 3rem;
+    text-align: center;
+}
+
+.sText h1{
+    margin: 2rem 0rem;
+    color: #111;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 0rem;
+    word-spacing: .25rem;
+}
+
+.sText p{
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.card a{
+    color: #fff;
+
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:nth-child(1):hover a{
+    background-color: #3d80fd;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:nth-child(1) a:hover{
+    background-color: #07c507;
+}
+
+.card:nth-child(2):hover a{
+    background-color: #eb5b22;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:nth-child(2) a:hover{
+    background-color: #07c507;
+}
+
+.card:nth-child(3):hover a{
+    background-color: #5a48ff;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:nth-child(3) a:hover{
+    background-color: #07c507;
+}
