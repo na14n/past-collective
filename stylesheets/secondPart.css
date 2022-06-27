@@ -233,18 +233,18 @@
         height: 200vh;
     }
 
-    .imgOne{
-        visibility: hidden;
-        opacity: 0;
+    .docsHoverContainer{
+        top: 20%;
+        right: 1%;
     }
 
-    .imgTwo{
-        visibility: hidden;
-        opacity: 0;
+    .pptHoverContainer{
+        top: 40%;
+        right: 1%;
     }
 
-    .imgThree{
-        visibility: hidden;
-        opacity: 0;
+    .psdHoverContainer{
+        top: 75%;
+        right: 1%;
     }
 }
