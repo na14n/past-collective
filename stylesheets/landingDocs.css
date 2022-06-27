@@ -13,10 +13,19 @@ html{
     scroll-behavior: smooth;
 }
 
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerContainer{
+    order:3;
+}
+
 .landingDocs{
     position: relative;
     background-color: #fff;
-    min-height: 100vh;
     width: 100%;
     overflow: hidden;
 }
@@ -72,6 +81,7 @@ html{
     opacity: 1;
     visibility: visible;
     transition: ease-out .25s;
+    overflow: hidden;
     z-index: 20;
 }
 

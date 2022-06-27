@@ -11,7 +11,8 @@
 
 .footerContainer{
     position: relative;
-    min-height: 13vh;
+    bottom:0;
+    max-height: 100rem;
     width: 100%;
     background-color: #202020;
     z-index: 20;
@@ -30,10 +31,17 @@
     visibility: hidden;
 }
 
+.footerContainer.active{
+    z-index: 19;
+    visibility: hidden;
+    opacity: 0;
+}
+
 .fText{
     position: relative;
     height: 100%;
     max-width: 30rem;
+    max-height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -61,6 +69,7 @@
     max-width: 25rem;
     display: flex;
     flex-direction: column;
+    max-height: 10rem;
 }
 
 .hDisclaimer{
@@ -95,6 +104,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-height: 5rem;
 }
 
 .authors h1{
@@ -121,6 +131,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-height: 5rem;
 }
 
 .btmMenu h1{
@@ -150,26 +161,33 @@
     color: #8f62d6;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+
+    .footerContainer{
+        box-sizing: border-box;
+        max-height: 70vh;
+        padding: 2rem;
+        overflow: hidden;
+    }
     
     .fText{
-        margin: 1rem;
+        margin-bottom: 0.5rem;
     }
     
     .authors{
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     .btmMenu{
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     .tMark{
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     .pDisclaimer{
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
 }
