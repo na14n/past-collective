@@ -11,16 +11,18 @@
 
 .footerContainer{
     position: relative;
-    max-height: 22vh;
+    min-height: 13vh;
     width: 100%;
     background-color: #202020;
-    overflow: hidden;
     z-index: 20;
     opacity: 1;
     visibility: visible;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
     transition: .25s;
+    padding: 1rem;
 }
 
 .footerContainer.is-active{
@@ -35,7 +37,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1rem;
 }
 
 .fText h1{
@@ -60,25 +61,22 @@
     max-width: 25rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    align-items: flex-start;
 }
 
 .hDisclaimer{
     color: #fff;
-    margin: .25rem 0rem;
     font-size: 1rem;
+    margin: .25rem 0rem;
     font-weight: 900;
-    
 }
 
 .pDisclaimer{
     color: #c5c5c5;
-    margin: 0rem 0rem 0.7rem;
     font-size: 0.75rem;
     text-align: left;
     font-weight: 400;
     letter-spacing: 0.2px;
+    margin-bottom: .5rem;
 }
 
 .rReserved{
@@ -96,7 +94,6 @@
     max-width: 25rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     align-items: flex-start;
 }
 
@@ -123,7 +120,6 @@
     max-width: 25rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     align-items: flex-start;
 }
 
@@ -152,4 +148,28 @@
 
 .aPsd:hover{
     color: #8f62d6;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .fText{
+        margin: 1rem;
+    }
+    
+    .authors{
+        margin: 1rem;
+    }
+
+    .btmMenu{
+        margin: 1rem;
+    }
+
+    .tMark{
+        margin: 1rem;
+    }
+
+    .pDisclaimer{
+        margin-bottom: 1rem;
+    }
+
 }

@@ -31,29 +31,33 @@ body{
 }
 
 .lContent{
-    width: 100%;
+    width: 80%;
+    max-height: 100%;
     position: absolute;
-    top: 50px;
-    left: 10vw;
-    z-index: 3;
-    flex-flow: row;
+    top: 15%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
 }
 
 .lText{
     position: relative;
-    width: 450px;
+    left: 10vw;
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .lText h1{
     color: #fff;
-    margin: 20px;
+    margin: 0px 20px;
     font-size: 4rem;
     font-weight: 900;
-    
 }
 
 .lText p{
-    margin: 0px 20px;
+    margin: 10px 20px;
+    width: 80%;
     color: #fff;
     font-size: 1rem;
     text-align: left;
@@ -63,7 +67,7 @@ body{
 
 .scrolling{
     position: absolute;
-    right: 100vw;
+    right: 105vw;
     bottom: 24vh;
     transform: rotate(-5deg);
     z-index: 2;
@@ -102,16 +106,14 @@ body{
 }
 
 .scrollDownBtn{
-    width: 400px;
-    position: absolute;
-    top: 400px;
+    margin: 20px 40px;
     left: 10vw;
+    position: relative;
     z-index: 22;
 }
 
 .downBtn{
     position: absolute;
-    margin: 0px 20px;
     opacity: 1;
     visibility: visible;
     transition: .3s;
@@ -220,3 +222,28 @@ body{
     transform: translateY(-10vh) translateX(30vh) scale(0.8) rotate(-10deg);
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .lContent{
+        top: 15%;
+    }
+
+    .lText h1{
+        font-size: 2rem;
+    }
+
+    .lText p{
+        font-size: 0.8rem;
+    }
+
+    .scrollDownBtn{
+        left:15px;
+    }
+
+    .btnOne{
+        width: 10rem;
+        height: 2.2rem;
+        font-size: 0.75rem;
+    }
+
+}
