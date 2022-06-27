@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-weight: 400;
+}
+
+.footerContainer{
+    position: relative;
+    bottom:0;
+    max-height: 100rem;
+    width: 100%;
+    background-color: #202020;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: .25s;
+    padding: 1rem;
+}
+
+.footerContainer.is-active{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fText{
+    position: relative;
+    height: 100%;
+    max-width: 30rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.fText h1{
+    color: #fff;
+    margin: .25rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    
+}
+
+.fText p{
+    color: #c5c5c5;
+    font-size: 0.75rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.tMark{
+    position: relative;
+    height: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    max-height: 10rem;
+}
+
+.hDisclaimer{
+    color: #fff;
+    font-size: 1rem;
+    margin: .25rem 0rem;
+    font-weight: 900;
+}
+
+.pDisclaimer{
+    color: #c5c5c5;
+    font-size: 0.75rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    margin-bottom: .5rem;
+}
+
+.rReserved{
+    color: #c5c5c5;
+    font-size: 0.8rem;
+    text-align: right;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+}
+
+.authors{
+    position: relative;
+    top: 0rem;
+    height: 100%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 5rem;
+}
+
+.authors h1{
+    color: #fff;
+    margin: .25rem 0rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.authors p{
+    color: #c5c5c5;
+    margin: 0rem 0rem 0.05rem;
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+
+.allRightsReserved{
+    position: relative;
+    max-width: 25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .footerContainer{
+        height: fit-content;
+        box-sizing: border-box;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    
+    .fText{
+        margin: 0.5rem;
+        height: fit-content;
+    }
+    
+    .authors{
+        margin: 0.5rem;
+        height: fit-content;
+    }
+
+    .allRightsReserved{
+        height: fit-content;
+        margin: 0.5rem;
+    }
+
+    .rReserved{
+        text-align: left;
+    }
+
+    .tMark{
+        margin: 0.5rem;
+        height: fit-content;
+    }
+}
