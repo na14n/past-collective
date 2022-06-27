@@ -187,7 +187,7 @@ body{
 
 .imgOne{
     position: absolute;
-    bottom: 0;
+    bottom: -5;
     left: 0;
     height: 45%;
     width: 45%;
@@ -222,7 +222,7 @@ body{
     transform: translateY(-10vh) translateX(30vh) scale(0.8) rotate(-10deg);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     
     .lContent{
         top: 15%;
@@ -246,4 +246,18 @@ body{
         font-size: 0.75rem;
     }
 
+    .imgOne img{
+        height: 60%;
+        transform: rotate(90deg) translateX(6rem) translateY(5rem);
+    }
+
+    .imgTwo img{
+        height: 90%;
+        transform: translateX(0rem) translateY(5rem);
+    }
+
+    .imgThree img{
+        height: 89%;
+        transform: translateX(4rem) translateY(11rem) rotate(-20deg);
+    }
 }
