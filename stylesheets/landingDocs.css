@@ -13,16 +13,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-.footerContainer{
-    order:3;
-}
-
 .landingDocs{
     position: relative;
     background-color: #fff;

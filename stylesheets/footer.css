@@ -15,7 +15,7 @@
     max-height: 100rem;
     width: 100%;
     background-color: #202020;
-    z-index: 20;
+    z-index: 10;
     opacity: 1;
     visibility: visible;
     display: flex;
@@ -41,7 +41,7 @@
     position: relative;
     height: 100%;
     max-width: 30rem;
-    max-height: 8rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -91,7 +91,7 @@
 .rReserved{
     color: #c5c5c5;
     font-size: 0.8rem;
-    text-align: left;
+    text-align: right;
     font-weight: 900;
     letter-spacing: 0.2px;
 }
@@ -123,71 +123,46 @@
     letter-spacing: 0.2px;
 }
 
-.btmMenu{
+
+.allRightsReserved{
     position: relative;
-    top: 0rem;
-    height: 100%;
     max-width: 25rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    max-height: 5rem;
-}
-
-.btmMenu h1{
-    color: #fff;
-    margin: .25rem 0rem;
-    font-size: 1rem;
-    font-weight: 900;
-}
-
-.btmMenu a{
-    text-decoration: none;
-    color: #c5c5c5;
-    margin: 0rem 0rem 0.05rem;
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-
-.aDocs:hover{
-    color: #3e80fa;
-}
-
-.aPpt:hover{
-    color: #d45c2c;
-}
-
-.aPsd:hover{
-    color: #8f62d6;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 1000px) {
 
     .footerContainer{
+        height: fit-content;
         box-sizing: border-box;
-        max-height: 70vh;
-        padding: 2rem;
+        padding: 1rem;
         overflow: hidden;
     }
     
     .fText{
-        margin-bottom: 0.5rem;
+        margin: 0.5rem;
+        height: fit-content;
     }
     
     .authors{
         margin: 0.5rem;
+        height: fit-content;
     }
 
-    .btmMenu{
+    .allRightsReserved{
+        height: fit-content;
         margin: 0.5rem;
+    }
+
+    .rReserved{
+        text-align: left;
     }
 
     .tMark{
         margin: 0.5rem;
+        height: fit-content;
     }
-
-    .pDisclaimer{
-        margin-bottom: 0.5rem;
-    }
-
 }
