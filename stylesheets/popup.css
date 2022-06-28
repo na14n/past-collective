@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 
-
 .popup-btn{
     z-index: 22;
     color: #fff;
@@ -56,6 +55,7 @@
     width: 50vw;
     height: 60vh;
     margin: 4rem;
+    z-index: 50;
 }
 
 .product .popup-card .product-img{
@@ -251,7 +251,7 @@
   }
 
   .product .popup-card .close-btn{
-    z-index: 30;
+    z-index: 50;
     pointer-events: all;
   }
 

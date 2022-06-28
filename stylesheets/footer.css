@@ -15,12 +15,12 @@
     max-height: 100rem;
     width: 100%;
     background-color: #202020;
+    z-index: 20;
     opacity: 1;
     visibility: visible;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     transition: .25s;
     padding: 1rem;
 }
@@ -133,7 +133,6 @@
     max-width: 25rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     align-items: flex-start;
 }
 
@@ -193,6 +192,11 @@
     }
 
     .tMark{
+        margin: 0.5rem;
+        height: fit-content;
+    }
+
+    .btmMenu{
         margin: 0.5rem;
         height: fit-content;
     }
